@@ -1,5 +1,7 @@
 # Lab Report 1
 
+[Back to Homepage](https://d-doan.github.io/cse15l-lab-reports/)
+
 In this report we will be exploring how to create log into a course specific account on ieng6 using the vscode terminal on a windows machine.
 
 ## Part 1 - Installing VSCode
@@ -181,3 +183,5 @@ The final shortcut is that you can press the up-arrow button when using your ter
 ## Conclusion
 
 Congratulations you have now learned how to log into a course specific account on ieng6 through ssh. We have also explored basic commands, moved files to a remote computer, and learned how to automate the password process through creating a ssh key.
+
+[Back to Homepage](https://d-doan.github.io/cse15l-lab-reports/)
