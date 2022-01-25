@@ -180,6 +180,8 @@ Another shortcut is using semicolons to run multiple commands on the same line w
 
 The final shortcut is that you can press the up-arrow button when using your terminal to return to the previous command that you ran on the terminal.
 
+These shortcuts can save you a variable number of keystrokes. Depending on what you want to do the keystroke amount would change, for example if you used the shortcut that puts the command in quotes, it saves you the keystrokes that it would take to quit the terminal. Whereas if you used semicolons to run multiple commands on the same line, you save 3 keystrokes per command since you only have to write cp and press enter once. The biggest saver of keystrokes is when we use the up arrow which can save us an entire line of typing since it accesses your last used commands, so we would save the length of the command - 1 (for the up arrow) keystrokes.
+
 ## Conclusion
 
 Congratulations you have now learned how to log into a course specific account on ieng6 through ssh. We have also explored basic commands, moved files to a remote computer, and learned how to automate the password process through creating a ssh key.
