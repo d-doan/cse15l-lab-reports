@@ -6,13 +6,18 @@ In this report we will focus on encountering and addressing symptoms and bugs in
 
 There will be a total of 3 tests represented in this report along with the process of how they were addressed.
 
-**list of bugs:** text after link, no link, () in code?/maybe picture instead of link
 
-## Problem 1
+## Problem 1: Text after link
 
-## Problem 2
 
-## Problem 3
+
+## Problem 2: Parenthesis within links
+
+
+
+## Problem 3: No valid link in file
+
+
 
 ## Conclusion
 
