@@ -4,6 +4,10 @@
 
 In this lab report we will further be exploring debugging through the use of more obscure test cases for our `markdown-parse` repository coupled writing Junit tests for these files.
 
+Here is a link to my repository for `markdown-parse`: [My Markdown Parse](https://github.com/d-doan/markdown-parse)
+
+Here is a link to the repository that we reviewed: [Reviewed Markdown Parse](https://github.com/AchuthKrishna/markdown-parse)
+
 ## Adding Junit tests for our Snippets
 
 In order to test our implementation of markdown-parse, and how it interacts with certain edge cases, we first need to create the edge cases inside our repository and also add Junit tests, which will allow us to easily evaluate our code against these tests.
