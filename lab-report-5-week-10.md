@@ -43,5 +43,20 @@ We will be exploring the two test cases that we found above and determing which 
 > [/url]
 ```
 
+Since we know that the output was the result of line 923 on my implementation of markdown-parse, we can open the respective test file in order to see the input which happens to be `[foo [bar](/url)(/url2)`
+
+In this case, both outputs are not correct since we are defining correctness through the commonmark editor, which states that the only link in the file is `[bar]`.
+
+![Image](lab5-commonmark-test-1.png)
+
+The bug that caused my code to return `[/url]` was because my code does not account for unexpected `[`'s between a set of brackets, `[]`. To fix this I could add a tracker that checks for a duplicate of a grouping character that appears before its respective pair, so my code would search for another instance of `[` that appears before `]` and address it appropriately.
+
+My current code is pictured below 
+
+![Image](lab5-my-code-test-1.png)
+
+
+## Test case 2
+
 
 [Back to Homepage](https://d-doan.github.io/cse15l-lab-reports/)
