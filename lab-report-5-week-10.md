@@ -58,5 +58,32 @@ My current code is pictured below
 
 ## Test case 2
 
+```
+912a1045
+> []
+```
+
+We can apply the same logic we did in test-case 1 in order to find the file that is being tested in this case, which is when we go to line 912 and 1045 in the respective repositories and it shows the file name, `568.md`
+
+```
+[foo][bar][baz]
+
+[baz]: /url
+```
+
+Since this code does not produce an output on my repository when looking at the `diff` results, we can infer that my code threw an exception so the bash script does not print anything out. Rather, the output of my code is pictured below.
+
+![Image](lab5-error-message-test-2.png)
+
+In order to debug this we are going to look at line 22 in `MarkdownParse.java`
+
+![Image](lab5-my-code-test-2.png)
+
+The bug here is that in line 22 I try to access the index of `closeParen` - 1 but the index of `closeParen` in this test case is -1 since there are no parentheses. This is a easy solution where if we move the line of code that checks for when `openParen, closeParen, nextOpenBracket, nextCloseBracket` = -1 then exit to right after when the variables are declared, the loop would exit before reaching the `IndexOutOfBoundsException`. 
+
+## Conclusion
+
+In this lab report we explored how to define what a "correct" implemenetation of `markdown-parse` would look like while also using bash scripts and commands in order to compare two implementations of the same program on various test cases. This also allowed us to use this to debug since we could see what our output was versus the correct result was in a relatively easy manner.
+
 
 [Back to Homepage](https://d-doan.github.io/cse15l-lab-reports/)
